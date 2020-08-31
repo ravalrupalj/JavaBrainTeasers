@@ -1,3 +1,4 @@
+package com.spicycoder.tutorial;
 
 public class FirstCode { 
 	public static void main(String args[]) {

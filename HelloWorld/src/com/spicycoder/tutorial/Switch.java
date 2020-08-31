@@ -1,3 +1,4 @@
+package com.spicycoder.tutorial;
 // you can use string and switch only in 1.7 and later version
 public class Switch {
 

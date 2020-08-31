@@ -1,3 +1,4 @@
+package com.spicycoder.tutorial;
 
 public class Nested_Loop_Practice {
 	public static void main(String[] args){
