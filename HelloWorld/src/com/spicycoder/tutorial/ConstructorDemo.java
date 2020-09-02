@@ -6,7 +6,8 @@ public class ConstructorDemo {
 		
 		int total=appliances.getSum();
 		System.out.println(total);
-		
+		int a=appliances.setApple(78989);
+		System.out.println(a);
 	}
 }
 class Fruits{
@@ -18,7 +19,8 @@ class Fruits{
 	}
 	public int getSum() {
 		return apple+banana;
-	
-
+	}
+	public int setApple(int apple) {
+		return apple=apple;
 	}
 }

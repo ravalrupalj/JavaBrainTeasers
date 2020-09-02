@@ -5,13 +5,13 @@ public class ObjectOriented {
 		AirCraft details=new AirCraft();
 		details.passangers=5;
 		details.cruiseSpeed=140;
-		details.fuelCapacity=56.2;
-		details.fuelBurnRate=9.5;
+		details.fuelCapacity=56.2f;
+		details.fuelBurnRate=9.5f;
 		AirCraft techni=new AirCraft();
 		techni.passangers=4;
 		techni.cruiseSpeed=130;
-		techni.fuelCapacity=45.2;
-		techni.fuelBurnRate=4.5;
+		techni.fuelCapacity=45.2f;
+		techni.fuelBurnRate=4.5f;
 		System.out.println("details of AirCraft: "+ details.passangers);
 		System.out.println("\ndetails of AirCraft: "+ techni.fuelBurnRate);
 		double average =details.cruiseSpeed/details.passangers;
