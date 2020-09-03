@@ -6,8 +6,22 @@ public class ConstructorDemo {
 		
 		int total=appliances.getSum();
 		System.out.println(total);
-		int a=appliances.setApple(78989);
-		System.out.println(a);
+		
+		int b=appliances.getApple();
+		System.out.println("Apple value is "+b);
+		
+		appliances.setApple(78989);
+
+		b=appliances.getApple();
+		System.out.println("Apple value is "+b);
+		
+
+		appliances.setApple(5000000);
+
+		b=appliances.getApple();
+		System.out.println("Apple value is "+b);
+		
+		
 	}
 }
 class Fruits{
@@ -20,7 +34,10 @@ class Fruits{
 	public int getSum() {
 		return apple+banana;
 	}
-	public int setApple(int apple) {
-		return apple=apple;
+	public void setApple(int apple) {
+		this.apple=apple;
+	}
+	public int getApple() {
+		return apple;
 	}
 }
