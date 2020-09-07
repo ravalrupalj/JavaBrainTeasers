@@ -10,6 +10,7 @@ public class MethodOverloading {
 			obj1.add(12, 41);
 			obj1.add(1,5,8);
 			obj1.add(4.5, 8.2);
+			obj1.add(45,1.2);
 			System.out.println(obj1.num1);
 			System.out.println(obj1.num2);
 			System.out.println(obj1.operation);
@@ -34,12 +35,15 @@ class Home{
 		operation=ope;
 	}
 	public void add(int i,int j) {
-		System.out.println("First Method"+i+j);
+		System.out.println("First Method "+i+" "+j);
 	}
 	public void add(int i,int j,int k) {
-		System.out.println("Second Method"+i+j+k);
+		System.out.println("Second Method "+i+" "+j+" "+k);
 	}
 	public void add(double i,double j) {
-		System.out.println("Third Method"+i+j);
+		System.out.println("Third Method "+i+" "+j);
+	}
+	public void add(int i,double j) {
+		System.out.println("Forth Method "+i+" "+j);
 	}
 }
