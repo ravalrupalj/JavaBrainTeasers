@@ -8,3 +8,8 @@ public class GettersSettersEncapsulation {
 	}
 
 }
+class student{
+	public void show() {
+		System.out.println("in C");
+	}
+}
