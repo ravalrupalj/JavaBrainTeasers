@@ -7,3 +7,6 @@ public class Interfaces {
 	}
 
 }
+class Furniture{
+	
+}
