@@ -1,4 +1,4 @@
-package Edabit;
+package edabit;
 
 public class Challenge {
 

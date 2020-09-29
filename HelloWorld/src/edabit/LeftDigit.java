@@ -1,4 +1,4 @@
-package Edabit;
+package edabit;
 
 public class LeftDigit {
 	public static void main(String[] args) {
