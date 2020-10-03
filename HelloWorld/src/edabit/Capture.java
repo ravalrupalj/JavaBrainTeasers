@@ -1,6 +1,8 @@
 package edabit;
 
 import java.util.Arrays;
+import java.util.Collections;
+
 
 public class Capture {
 
@@ -9,6 +11,9 @@ public class Capture {
 		System.out.println(canCapture(input));
 		int[] output=hashPlusCount("###+");
 		System.out.println(Arrays.toString(output));
+		int[] result=new int[] {1, 2, 10, 50, 5};
+		System.out.println(sortNumsAscending(result));	
+		
 	}
 	public static boolean canCapture(String[] rooks) {
 		if ((rooks[0].charAt(0)==rooks[1].charAt(0)) || (rooks[0].charAt(1)==rooks[1].charAt(1))){
@@ -32,6 +37,11 @@ public class Capture {
 		int[] obj=new int[] {count1 ,count2};
 		return obj;
 	
+	}
+	public static int[] sortNumsAscending(int[] nums){
+		Arrays.sort(nums);
+		return Arrays.toString(nums);
+		
 	}
 
 }
