@@ -15,9 +15,14 @@ public class Capture {
 //		System.out.println(sortNumsAscending(result));	
 //		boolean[] result1=new boolean[] {true,false,false,false,true};
 //		System.out.println(result1);
-		System.out.println(primeNumberInRange(10, 15));
-		System.out.println(primeNumberInRange(62, 66));
-		System.out.println(primeNumberInRange(3, 5));
+//		System.out.println(primeNumberInRange(10, 15));
+//		System.out.println(primeNumberInRange(62, 66));
+//		System.out.println(primeNumberInRange(3, 5));
+//		System.out.println(primeNumber(10, 15));
+//		System.out.println(primeNumber(62, 66));
+		System.out.println(primeNumber(0, 2));
+
+
 	}
 	public static boolean canCapture(String[] rooks) {
 		if ((rooks[0].charAt(0)==rooks[1].charAt(0)) || (rooks[0].charAt(1)==rooks[1].charAt(1))){
@@ -91,5 +96,27 @@ public class Capture {
 		}	
 		return false;	
 	}
+	public static boolean primeNumber(int n1, int n2) {
+		while (n1<=n2) {
+			if (n1==2) {
+				return true;
+			}
+			for (int i=2;i<n1;i++) {
+				if (n1%i==0||n1==0||n1==1) {
+					break;
+				}
+				else if(n1%i!=0 & n1==i+1) {
+					return true;
+				}
+			
+			}
+			
+			n1=n1+1;
+		
+		}
+		return false;
+	}
+
+	
 
 }
