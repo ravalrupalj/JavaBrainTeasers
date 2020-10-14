@@ -3,9 +3,10 @@ package edabit;
 public class StutteringFunction {
 
 	public static void main(String[] args) {
-		System.out.println(stutter("incredible"));
+		//System.out.println(stutter("incredible"));
 		int[] inputArray = new int[] {30,40,20,5};
-		System.out.println(changeEnough(inputArray,12.55));
+		//System.out.println(changeEnough(inputArray,12.55));
+		System.out.println(repeat("mice",5));
 	}
 	public static String stutter(String s) {
 		String letter=s.substring(0,2);
@@ -30,6 +31,12 @@ public class StutteringFunction {
 		}
 		System.out.println(sum);
 		return sum>num;
+		
+	}
+	public static String repeat(String s,int num) {
+		String repeated=new String(new char[num]).replace("\0", s);
+		return repeated;
+			
 		
 	}
 }
