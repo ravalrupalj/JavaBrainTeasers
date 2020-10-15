@@ -1,5 +1,9 @@
 package edabit;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
+
 public class StutteringFunction {
 
 	public static void main(String[] args) {
@@ -7,6 +11,11 @@ public class StutteringFunction {
 		int[] inputArray = new int[] {30,40,20,5};
 		//System.out.println(changeEnough(inputArray,12.55));
 		System.out.println(repeat("mice",5));
+		System.out.println(getWord("seas","onal"));
+		System.out.println(intWithinBounds(3, 1, 9));
+		System.out.println(isEvenOrOdd(3));
+		int[] input=new int[] {88,232,4,9721,555};
+		System.out.println(Arrays.toString(filterByLength(input, 3)));
 	}
 	public static String stutter(String s) {
 		String letter=s.substring(0,2);
@@ -34,9 +43,53 @@ public class StutteringFunction {
 		
 	}
 	public static String repeat(String s,int num) {
-		String repeated=new String(new char[num]).replace("\0", s);
-		return repeated;
+		String output="";
+		for(int i =0; i< s.length(); i++) {
+			int count = num;
+			while(count > 0) {
+				count--;
+				output+= s.charAt(i);
+			}
+		}
+		return output;
 			
 		
 	}
+	public static String getWord(String left, String right) {
+		String str=left+right;
+		String cap = str.substring(0, 1).toUpperCase() + str.substring(1);
+		return cap;
+	}
+	public static boolean intWithinBounds(int n, int lower, int upper) {
+		for (int i=lower;i<upper;i++) {
+			if (i==n) {
+				return true;
+			}
+		}
+		return false;
+	}
+    public static String isEvenOrOdd(int num) {
+    	if (num%2==0) {
+    		return "even";
+    	}
+    	else {
+    		return "odd";
+    	}
+    }
+    public static int[] filterByLength(int[] number,int len) {
+    	int[] out = new int[number.length];
+    	int index = 0;
+    	for (int k:number) {
+//    		int start = (int) Math.pow(10, len-1);
+//    		int end =  (int) Math.pow(10, len) - 1;
+    		
+    		if (String.valueOf(k).length() == len) {
+    			out[index] = k;
+    			index += 1;
+    		}
+    	}
+    	
+
+    	return Arrays.copyOfRange(out, 0, index);
+    }
 }
