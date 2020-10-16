@@ -80,16 +80,11 @@ public class StutteringFunction {
     	int[] out = new int[number.length];
     	int index = 0;
     	for (int k:number) {
-//    		int start = (int) Math.pow(10, len-1);
-//    		int end =  (int) Math.pow(10, len) - 1;
-    		
     		if (String.valueOf(k).length() == len) {
     			out[index] = k;
     			index += 1;
     		}
     	}
-    	
-
     	return Arrays.copyOfRange(out, 0, index);
     }
 }
