@@ -16,6 +16,8 @@ public class StutteringFunction {
 		System.out.println(isEvenOrOdd(3));
 		int[] input=new int[] {88,232,4,9721,555};
 		System.out.println(Arrays.toString(filterByLength(input, 3)));
+		int [] input1=new int[] {0,19,18973623};
+		System.out.println(probe(input1));
 	}
 	public static String stutter(String s) {
 		String letter=s.substring(0,2);
@@ -86,5 +88,14 @@ public class StutteringFunction {
     		}
     	}
     	return Arrays.copyOfRange(out, 0, index);
+    }
+    public static int probe(int[] r) {
+    	Arrays.sort(r);
+    	for (int i=r.length-1;i>=0;i--) {
+    		if (r[i]%2==0) {
+    			return r[i];
+    		}
+    	}
+    	return -1;
     }
 }
