@@ -57,5 +57,8 @@ public class FindThe {
 		System.out.println(String.join("",str));
 		return count;
 	}
+	public static int count(String s) {
+		
+	}
 
 }
