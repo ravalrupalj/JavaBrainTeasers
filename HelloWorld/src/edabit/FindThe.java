@@ -11,6 +11,15 @@ public class FindThe {
 		System.out.println(calculateScores("ABCBACC"));
 		String[] input=new String[] {"###","###","###"};
 		System.out.println(countCharacters(input));
+		
+		Person personOne = new Person("Popu", 35, 5); 
+		Person personTwo = new Person("Titu", 15, 10);
+		Person personThree = new Person("Linky", 22, 8);
+		Person[] allPersons = {personOne, personTwo, personThree};
+		
+		double ans = getBudgets(allPersons);
+		System.out.print(ans);
+		
 	}
 	public static String bomb(String s) {
 		String l=s.toLowerCase();
@@ -72,5 +81,17 @@ public class FindThe {
 		}
 		
 	}
+	
+	public static double getBudgets(Person[] persons) {
+		double ans = 0;
+		
+		for(Person person:persons) {
+			ans = ans + person.getBudget();
+		}
+		
+		return ans;
+	}
+	
+	
 
 }
