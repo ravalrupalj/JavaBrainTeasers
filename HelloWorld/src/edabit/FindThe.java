@@ -19,7 +19,8 @@ public class FindThe {
 		
 		double ans = getBudgets(allPersons);
 		System.out.print(ans);
-		
+		System.out.println(endCorona(487, 256, 23793));
+		System.out.println(endCorona(3000,2000,50699));
 	}
 	public static String bomb(String s) {
 		String l=s.toLowerCase();
@@ -91,7 +92,11 @@ public class FindThe {
 		
 		return ans;
 	}
-	
-	
+	public static int endCorona(int recovers, int newCases, int activeCases) {
+		int remaining=recovers-newCases;
+		double a= activeCases/remaining;
+		a = Math.round(a);
+		return (int)a;
+	}
 
 }
