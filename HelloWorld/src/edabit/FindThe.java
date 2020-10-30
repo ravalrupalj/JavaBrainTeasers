@@ -21,6 +21,9 @@ public class FindThe {
 		System.out.print(ans);
 		System.out.println(endCorona(487, 256, 23793));
 		System.out.println(endCorona(3000,2000,50699));
+		System.out.println(endCorona(30000, 25000, 390205));
+		System.out.println(endCorona(
+				260000, 255000, 20511691));
 	}
 	public static String bomb(String s) {
 		String l=s.toLowerCase();
@@ -94,8 +97,10 @@ public class FindThe {
 	}
 	public static int endCorona(int recovers, int newCases, int activeCases) {
 		int remaining=recovers-newCases;
-		double a= activeCases/remaining;
-		a = Math.round(a);
+		double b=(double)remaining;
+		double a= activeCases/b;
+		System.out.println("a="+a);
+		a = Math.ceil(a);
 		return (int)a;
 	}
 
