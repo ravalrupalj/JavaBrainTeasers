@@ -106,5 +106,6 @@ public class FindThe {
 	public static double discount(int price,int percentage) {
 		return price-((price*percentage)/100);
 	}
+	public static int reverse()
 
 }
