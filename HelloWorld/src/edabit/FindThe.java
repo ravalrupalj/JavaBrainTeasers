@@ -2,6 +2,7 @@ package edabit;
 
 import java.util.Arrays;
 
+
 public class FindThe {
 
 	public static void main(String[] args) {
@@ -24,6 +25,8 @@ public class FindThe {
 		System.out.println(endCorona(30000, 25000, 390205));
 		System.out.println(endCorona(
 				260000, 255000, 20511691));
+		int[] input1=new int[] {10,40,30,20,50};
+		System.out.println(secondLargest(input1));
 	}
 	public static String bomb(String s) {
 		String l=s.toLowerCase();
@@ -106,6 +109,10 @@ public class FindThe {
 	public static double discount(int price,int percentage) {
 		return price-((price*percentage)/100);
 	}
-	public static int reverse()
+	public static int secondLargest(int[] num) {
+		Arrays.sort(num);
+		int result= num[num.length-2];
+		return result;
+	}
 
 }
