@@ -27,7 +27,7 @@ public class FindThe {
 				260000, 255000, 20511691));
 		int[] input1=new int[] {10,40,30,20,50};
 		System.out.println(secondLargest(input1));
-		int[] input2=new int[] {1,2,3,4};
+		int[] input2=new int[] {1,5,6};
 		System.out.println(isAvgWhole(input2));
 	}
 	public static String bomb(String s) {
@@ -121,9 +121,14 @@ public class FindThe {
 		for(int k:arr) {
 			sum=sum+k;
 		}
-		double result=sum/(arr.length)*1.0;
-		System.out.println(result);
-		return true;
+		double result=sum/(arr.length*1.0);
+		if (result==(int)result) {
+			return true;
+		}
+		else {
+			return false;
+		}
+		
 	}
 
 }
