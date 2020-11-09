@@ -130,5 +130,9 @@ public class FindThe {
 		}
 		
 	}
+	public static String joinPath(String portion1, String portion2) {
+		String replaceString1=portion1.replaceAll("/","");
+		String replaceString2=portion2.replaceAll("/","");
+		return replaceString1+"/"+replaceString2;
 
 }
