@@ -134,5 +134,6 @@ public class FindThe {
 		String replaceString1=portion1.replaceAll("/","");
 		String replaceString2=portion2.replaceAll("/","");
 		return replaceString1+"/"+replaceString2;
+	public static 
 
 }
