@@ -29,6 +29,8 @@ public class FindThe {
 		System.out.println(secondLargest(input1));
 		int[] input2=new int[] {1,5,6};
 		System.out.println(isAvgWhole(input2));
+		int[] sum=new int[] {1,2,3};
+		System.out.println(cumulativeSum(sum));
 	}
 	public static String bomb(String s) {
 		String l=s.toLowerCase();
@@ -134,6 +136,18 @@ public class FindThe {
 		String replaceString1=portion1.replaceAll("/","");
 		String replaceString2=portion2.replaceAll("/","");
 		return replaceString1+"/"+replaceString2;
-	public static 
+	}
+	public static int[] cumulativeSum(int[] nums) {
+		int[] cumulative=new int[] {nums.length};
+		int [] empty= new int[] {};
+		int total=0;
+		for(int i=0;i<nums.length;i++) {
+			total=total+nums[i];
+			cumulative[i]=total;
+		}
+		System.out.println(cumulative.toString());
+		
+		return cumulative;
+	}
 
 }
