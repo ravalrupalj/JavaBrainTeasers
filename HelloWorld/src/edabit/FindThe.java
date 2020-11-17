@@ -138,15 +138,15 @@ public class FindThe {
 		return replaceString1+"/"+replaceString2;
 	}
 	public static int[] cumulativeSum(int[] nums) {
-		int[] cumulative=new int[] {nums.length};
+		int[] cumulative=new int[nums.length] ;
 		int [] empty= new int[] {};
 		int total=0;
 		for(int i=0;i<nums.length;i++) {
 			total=total+nums[i];
 			cumulative[i]=total;
 		}
-		System.out.println(cumulative.toString());
-		
+		System.out.println(Arrays.toString(cumulative));
+
 		return cumulative;
 	}
 
