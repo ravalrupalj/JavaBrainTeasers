@@ -31,6 +31,8 @@ public class FindThe {
 		System.out.println(isAvgWhole(input2));
 		int[] sum=new int[] {1,2,3};
 		System.out.println(cumulativeSum(sum));
+		int [] input3=new int[] {2,7,4,9,6,1,6,3};
+		System.out.println(isSpecialArray(input3));
 	}
 	public static String bomb(String s) {
 		String l=s.toLowerCase();
@@ -149,5 +151,7 @@ public class FindThe {
 
 		return cumulative;
 	}
+	public static boolean isSpecialArray(int[] arr) {
+
 
 }
