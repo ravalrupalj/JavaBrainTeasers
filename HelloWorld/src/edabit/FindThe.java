@@ -32,7 +32,9 @@ public class FindThe {
 		int[] sum=new int[] {1,2,3};
 		System.out.println(cumulativeSum(sum));
 		int [] input3=new int[] {2,7,4,9,6,1,6,3};
+		int [] input4= new int[] {2, 7, 9, 1, 6, 1, 6, 3};
 		System.out.println(isSpecialArray(input3));
+		System.out.println(isSpecialArray(input4));
 	}
 	public static String bomb(String s) {
 		String l=s.toLowerCase();
@@ -152,6 +154,12 @@ public class FindThe {
 		return cumulative;
 	}
 	public static boolean isSpecialArray(int[] arr) {
-
-
+		for (int i=0;i<arr.length;i++) {
+			if (((arr[i] %2==0) & (i%2==0)) || ((arr[i]%2!=0) & (i%2!=0))){
+				return true;
+			}
+		}
+		return false;
+		
+	}
 }
